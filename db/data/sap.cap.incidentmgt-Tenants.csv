@@ -1,0 +1,5 @@
+code,name,descr,uri_identifier
+DEV,Development,Development,dev
+UAT,User Acceptance Test,User Acceptance Test,uat    
+PRD,Production,Production,prd
+TST,Test,Test,tst

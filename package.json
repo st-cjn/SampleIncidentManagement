@@ -1,0 +1,43 @@
+{
+  "name": "sample-incident-mgt",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": {
+    "type": "git",
+    "url": "<Add your repository here>"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "@sap/cds-hana": "^2",
+    "@sap/xsenv": "^4.2.0",
+    "@sap/xssec": "^3",
+    "@types/node": "^20.11.17",
+    "@types/node-jose": "^1.1.13",
+    "express": "^4",
+    "node-fetch": "^2.7.0",
+    "node-jose": "^2.2.0",
+    "passport": "^0"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7",
+    "@sap/ux-specification": "^1.120.2"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-sample-incident-mgt": "cds watch --open sample-incident-mgt/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/sample-incident-mgt"
+  ],
+  "cds": {
+    "requires": {
+      "[production]": {
+        "db": "hana",
+        "auth": "xsuaa"
+      }
+    }
+  }
+}
